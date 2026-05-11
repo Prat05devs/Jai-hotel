@@ -1,7 +1,7 @@
 export const CONTACT = {
-  whatsappNumber: "919999999999",
-  phoneNumber: "+919999999999",
-  displayPhone: "+91 99999 99999",
+  whatsappNumber: "919458180097",
+  phoneNumber: "+919458180097",
+  displayPhone: "+91 94581 80097",
   email: "hello@jaihotelmandal.com",
   displayEmail: "hello@jaihotelmandal.com",
   address: "Mandal Village, route to Chopta, Chamoli District, Uttarakhand",
