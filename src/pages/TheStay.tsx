@@ -59,8 +59,16 @@ export function TheStay({ openBookingFlow }: TheStayProps) {
               </button>
             </div>
             <div className="order-1 lg:order-2">
-              <div className="aspect-[4/3] rounded-[32px] overflow-hidden shadow-lg">
-                <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&q=80&w=1200" alt="Cozy central garden and bonfire" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              <div className="grid grid-cols-2 gap-3">
+                <div className="col-span-2 aspect-[16/10] overflow-hidden rounded-2xl shadow-lg">
+                  <img src="/mandal1.webp" alt="Jai Hotel Mandal Valley exterior" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+                </div>
+                <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-md">
+                  <img src="/mandal2.webp" alt="Jai Hotel Mandal Valley rooms and property view" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+                </div>
+                <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-md">
+                  <img src="/mandal4.webp" alt="Jai Hotel Mandal Valley surrounding area" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+                </div>
               </div>
             </div>
           </div>
@@ -70,8 +78,16 @@ export function TheStay({ openBookingFlow }: TheStayProps) {
         <FadeInUp delay={0.2}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="aspect-[4/3] rounded-[32px] overflow-hidden shadow-lg">
-                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1200" alt="Modern interior of premium hut" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              <div className="grid grid-cols-2 gap-3">
+                <div className="col-span-2 aspect-[16/10] overflow-hidden rounded-2xl shadow-lg">
+                  <img src="/gop.jpeg" alt="Premium Gopeshwar hut bedroom" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+                </div>
+                <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-md">
+                  <img src="/gop1.jpeg" alt="Premium Gopeshwar hut warm wooden interior" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+                </div>
+                <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-md">
+                  <img src="/gop2.jpeg" alt="Premium Gopeshwar hut room details" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+                </div>
               </div>
             </div>
             <div>

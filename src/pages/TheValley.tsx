@@ -23,9 +23,12 @@ export function TheValley({ openItineraryFlow }: TheValleyProps) {
     {
       title: "The Ancient Heart of Chamoli (Gopeshwar & Anusuya Devi)",
       desc: "Step off the beaten path. In Mandal, trek the hidden 8-10km trail to the powerful Anusuya Devi Temple and the stunning Atri Muni Ashram waterfall. Just 7km away lies Gopeshwar, home to the historic Gopinath Temple.\n\nThe Winter Secret: Did you know the legendary 25km Rudranath trek is only open for five months? For the remaining seven months, Lord Rudranath is brought down to reside right here at the Gopinath Temple. Visit us in the off-season to experience this profound spiritual energy and receive Lord Rudra's blessings with ease.",
-      img: "https://commons.wikimedia.org/wiki/Special:FilePath/Gopinath%20Mandir%20%2C%20Gopeshwar%20Chamoli.jpg?width=1200",
-      credit: "Vishwanath Negi / Wikimedia Commons",
-      source: "https://commons.wikimedia.org/wiki/File:Gopinath_Mandir_,_Gopeshwar_Chamoli.jpg"
+      img: "/places2.jpeg",
+      images: [
+        { src: "/places2.jpeg", alt: "Gopeshwar valley and town view" },
+        { src: "/places.jpeg", alt: "Gopinath Temple stone architecture in daylight" },
+        { src: "/places1.jpeg", alt: "Gopinath Temple illuminated in the evening" }
+      ]
     },
     {
       title: "The Morning Forest Walk",
@@ -58,15 +61,28 @@ export function TheValley({ openItineraryFlow }: TheValleyProps) {
             <FadeInUp key={idx} delay={idx * 0.1}>
               <div className="group rounded-[24px] overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow border border-outline-variant/20 h-full flex flex-col">
                 <div className="aspect-[16/9] overflow-hidden relative">
-                  <img src={card.img} alt={card.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <a
-                    href={card.source}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="absolute bottom-3 left-3 rounded-full bg-black/55 px-3 py-1 text-[11px] font-semibold text-white/85 backdrop-blur transition hover:bg-black/70 hover:text-white"
-                  >
-                    Photo: {card.credit}
-                  </a>
+                  {card.images ? (
+                    <div className="grid h-full grid-cols-[1.35fr_0.65fr] gap-1 bg-black">
+                      <img src={card.images[0].src} alt={card.images[0].alt} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                      <div className="grid h-full grid-rows-2 gap-1">
+                        {card.images.slice(1).map((image) => (
+                          <img key={image.src} src={image.src} alt={image.alt} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <>
+                      <img src={card.img} alt={card.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                      <a
+                        href={card.source}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="absolute bottom-3 left-3 rounded-full bg-black/55 px-3 py-1 text-[11px] font-semibold text-white/85 backdrop-blur transition hover:bg-black/70 hover:text-white"
+                      >
+                        Photo: {card.credit}
+                      </a>
+                    </>
+                  )}
                 </div>
                 <div className="p-8 flex-grow">
                   <h3 className="text-2xl mb-4 font-serif">{card.title}</h3>

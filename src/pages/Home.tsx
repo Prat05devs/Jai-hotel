@@ -64,19 +64,19 @@ const stayHighlights = [
   {
     title: 'Mandal Valley Rooms',
     desc: 'The original Jai Hotel stay: budget-friendly rooms around a garden, suited for families, bikers and trekkers.',
-    image: 'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&q=80&w=900',
+    image: '/mandal1.webp',
     icon: Trees
   },
   {
     title: 'Gopeshwar Premium Huts',
     desc: 'Four quieter premium hut-style rooms near Gopinath Temple for guests who want a more private base.',
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=900',
+    image: '/gop.jpeg',
     icon: BedDouble
   },
   {
     title: 'Food Junction and Winehouse',
     desc: 'Simple, filling meals after a long mountain day, with hot chai, breakfast support and dinner planning.',
-    image: 'https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=900',
+    image: '/mandal3.webp',
     icon: Soup
   }
 ];
